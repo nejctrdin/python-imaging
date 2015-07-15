@@ -8,7 +8,7 @@ Note that in the original problem, only two metrics are required, `euclidian` an
 
 ## Dependencies
 
-The program uses [PIL](http://www.pythonware.com/products/pil/), python imaging library for processing images.
+The program uses [PIL](http://www.pythonware.com/products/pil/), python imaging library for processing images. If you want to export images to jpg, you also need `libjpeg-dev` installed on your system.
 
 ## Running the program
 
@@ -86,3 +86,7 @@ python imaging.py solar euclidian
 ``
 
 ![alt text](https://raw.githubusercontent.com/nejctrdin/python-imaging/master/images/solar.jpg "Configuration earth with euclidian distance")
+
+## TODO
+
+- Add simulation option, which dynamically updates image in time intervals with stars moving.

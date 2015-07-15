@@ -97,6 +97,7 @@ def createImage(width, height, stars, distance):
         for j in xrange(height):
             red, green, blue = computeValues(i, j, stars, distance)
             pixels[i,j] = (red, green, blue)
+
     return image
 
 def main(argv):
@@ -106,6 +107,10 @@ def main(argv):
     image = createImage(width, height, stars, distance)
 
     image.show()
+
+    decision = raw_input("Do you want to save the image to {0}.jpg?(y)".format(fileName))
+    if decision == "y":
+        image.save("{0}.jpg".format(fileName))
 
 if __name__ == "__main__":
     main(argv)
