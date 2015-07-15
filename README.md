@@ -4,6 +4,8 @@ This is an implementation of The Colors in Our Stars. The problem is specified o
 
 The program creates an image of the specified size and computes the RGB values of each point in space, based on the influences of specified stars. Each star has a position in plane, intensity and the colours of radiation. The influences on each pixel are also based on the distance used in the running of the program. The nearer some point is to the star, the more influenced is by the particular star.
 
+Note that in the original problem, only two metrics are required, `euclidian` and `manhattan`. The program additionally supports the `chebyshev` distance.
+
 ## Dependencies
 
 The program uses [PIL](http://www.pythonware.com/products/pil/), python imaging library for processing images.
@@ -38,3 +40,11 @@ Three distances can be used in the program:
 3. Chebyshev distance: `dist(sx, sy, x, y) = max(abs(sx-x), abs(sy - y))`
 
 ## Examples
+
+The following examples can be generated with different the given configuration files. The examples are taken from [Code Golf Stack Exchange](http://codegolf.stackexchange.com/questions/53124/the-colors-in-our-stars). 
+
+``bash
+python imaging.py A euclidian
+``
+
+![alt text](https://raw.githubusercontent.com/nejctrdin/python-imaging/master/images/A.jpg "Configuration A with euclidian distance")
