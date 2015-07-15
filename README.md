@@ -76,3 +76,13 @@ python imaging.py D chebyshev
 ``
 
 ![alt text](https://raw.githubusercontent.com/nejctrdin/python-imaging/master/images/D.jpg "Configuration D with chebyshev distance")
+
+### Configuration solar with euclidian distance
+
+This is a configuration of our solar system.
+
+``bash
+python imaging.py solar euclidian
+``
+
+![alt text](https://raw.githubusercontent.com/nejctrdin/python-imaging/master/images/solar.jpg "Configuration earth with euclidian distance")
